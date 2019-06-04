@@ -1,0 +1,11 @@
+/Users/blue/Projects/NSS/workspace/csharp/exercises/Linqed-list/bin/Debug/netcoreapp2.2/Linqed-list.deps.json
+/Users/blue/Projects/NSS/workspace/csharp/exercises/Linqed-list/bin/Debug/netcoreapp2.2/Linqed-list.runtimeconfig.json
+/Users/blue/Projects/NSS/workspace/csharp/exercises/Linqed-list/bin/Debug/netcoreapp2.2/Linqed-list.runtimeconfig.dev.json
+/Users/blue/Projects/NSS/workspace/csharp/exercises/Linqed-list/bin/Debug/netcoreapp2.2/Linqed-list.dll
+/Users/blue/Projects/NSS/workspace/csharp/exercises/Linqed-list/bin/Debug/netcoreapp2.2/Linqed-list.pdb
+/Users/blue/Projects/NSS/workspace/csharp/exercises/Linqed-list/obj/Debug/netcoreapp2.2/Linqed-list.csprojAssemblyReference.cache
+/Users/blue/Projects/NSS/workspace/csharp/exercises/Linqed-list/obj/Debug/netcoreapp2.2/Linqed-list.csproj.CoreCompileInputs.cache
+/Users/blue/Projects/NSS/workspace/csharp/exercises/Linqed-list/obj/Debug/netcoreapp2.2/Linqed-list.AssemblyInfoInputs.cache
+/Users/blue/Projects/NSS/workspace/csharp/exercises/Linqed-list/obj/Debug/netcoreapp2.2/Linqed-list.AssemblyInfo.cs
+/Users/blue/Projects/NSS/workspace/csharp/exercises/Linqed-list/obj/Debug/netcoreapp2.2/Linqed-list.dll
+/Users/blue/Projects/NSS/workspace/csharp/exercises/Linqed-list/obj/Debug/netcoreapp2.2/Linqed-list.pdb
