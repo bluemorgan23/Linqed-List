@@ -238,20 +238,39 @@ namespace Linqed_list
             */
             List<ReportItem> millionaireReport = new List<ReportItem>();
 
+            
+
             List<CustomerTwo> onlyMillionaires = (customersTwo.Where(c => c.Balance >= 1000000)).ToList();
 
-            onlyMillionaires.ForEach(m => {
-                ReportItem foo = new ReportItem 
-                {CustomerName = m.Name, BankName = banks.Single(b => b.Symbol == customersTwo.Single(c => c.Name == m.Name).Bank).Name};
-                millionaireReport.Add(foo);
-            });
-            
-            millionaireReport.OrderByDescending(c => c.GetLastName().First());
-
-        foreach (var item in millionaireReport.OrderByDescending(c => c.GetLastName().First()))
+            var groupJoin = onlyMillionaires.GroupJoin(banks, 
+                                                    m => m.Bank,
+                                                    bank => bank.Symbol,
+                                                    (m, millGroup) => new
+                                                    {
+                                                        CustomerName = m.Name,
+                                                        Bank = millGroup
+                                                    });
+            foreach(var item in groupJoin.OrderByDescending(c => c.CustomerName.Split(" ")[1].First()))
             {
-                Console.WriteLine($"{item.CustomerName} at {item.BankName}");
+                
+                foreach(BankTwo bank in item.Bank)
+                {
+                    Console.WriteLine($"{item.CustomerName} with {bank.Name}");
+                }
             }
+
+            // onlyMillionaires.ForEach(m => {
+            //     ReportItem foo = new ReportItem 
+            //     {CustomerName = m.Name, BankName = banks.Single(b => b.Symbol == customersTwo.Single(c => c.Name == m.Name).Bank).Name};
+            //     millionaireReport.Add(foo);
+            // });
+            
+        //     millionaireReport.OrderByDescending(c => c.GetLastName().First());
+
+        // foreach (var item in millionaireReport.OrderByDescending(c => c.GetLastName().First()))
+        //     {
+        //         Console.WriteLine($"{item.CustomerName} at {item.BankName}");
+        //     }
         }
     }
 }
